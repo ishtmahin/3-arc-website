@@ -5,44 +5,114 @@
     font-family: "Work Sans", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-  }
+}
 
-  /* shared styles  */
-.display-flex{
+/* shared styles  */
+.display-flex {
     display: flex;
 }
 
-.secondery-bg{
-    rgba(255, 144, 14, 0.1);
+.secondary-bg {
+    background-color: rgb(255, 144, 14, 0.1);
 }
 
 /* dark 02 color */
-.light-gray{
+.light-gray {
     color: rgb(66, 66, 66);
 }
 
-  /* header related styles */
-.navbar{
-    justify-content: space-between;
+/* dark 03 color */
+
+.sec-light-gray {
+    color: rgb(114, 114, 114);
+    ;
 }
 
-.nav-bar-links{
+.btn-primary{
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 23px;
+    text-align: center;
+    border-radius: 8px;
+    background: rgb(255, 144, 14);
+    padding: 20px 25px;
+    border: none;
+}
+
+/* header related styles */
+
+/* nav realted styles */
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar-links {
     gap: 10px;
 }
 
-.nav-items{
+.nav-items {
     list-style: none;
 }
 
-.nav-bar-link{
+.nav-bar-link {
     text-decoration: none;
-    
+    font-size: 1.2rem;
 }
 
-.navbar, .banner{
+.navbar,
+.banner {
     max-width: 1440px;
     margin: 0 auto;
 }
-  /* main related styles */
 
-  /* footer related styles */
+.brand {
+    color: rgb(19, 19, 19);
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 53px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+/* banner realted styles  */
+
+.banner-content {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.banner-title {
+    color: rgb(19, 19, 19);
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 75px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.banner-description {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.banner-image{
+    width: 100%;
+}
+
+/* main related styles */
+
+/* footer related styles */
+
+/* media queries realted styles */
+@media screen and (max-width: 576px) {
+    .navbar, .nav-bar-links{
+     flex-direction: column;
+    }
+}
