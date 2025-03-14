@@ -28,6 +28,11 @@
     ;
 }
 
+/* the oreange color  */
+.sec-color{
+    color: rgb(255, 144, 14);
+}
+
 .btn-primary{
     color: rgb(255, 255, 255);
     font-size: 1.2rem;
@@ -38,6 +43,10 @@
     background: rgb(255, 144, 14);
     padding: 20px 25px;
     border: none;
+}
+
+section{
+    margin-top: 130px;
 }
 
 /* header related styles */
@@ -108,11 +117,65 @@
 
 /* main related styles */
 
+main{
+    max-width: 1440px;
+    margin: 0 auto;    
+}
+
+
+/* features related styles */
+
+.features{
+    align-items: center;
+    padding: 60px;
+}
+
+.teams-images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.teams-images img{
+    width: 100%;
+}
+
+.features-content{
+    max-width: 540px;
+    margin-left: 75px;
+}
+
+.features-title{
+    font-size: 3rem;
+}
+
+#quick-list{
+    font-size: 3rem;
+    font-weight: 500;
+}
+
 /* footer related styles */
 
 /* media queries realted styles */
 @media screen and (max-width: 576px) {
-    .navbar, .nav-bar-links{
+    .navbar, 
+    .nav-bar-links, 
+    .features{
      flex-direction: column;
+    }
+
+    .teams-images{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .features-content{
+        margin-left: 0px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 932px){
+    .features{
+        flex-direction: column;
     }
 }
