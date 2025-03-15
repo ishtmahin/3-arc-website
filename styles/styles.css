@@ -113,6 +113,7 @@ section{
 
 .banner-image{
     width: 100%;
+    margin-bottom: 50px;
 }
 
 /* main related styles */
@@ -153,6 +154,30 @@ main{
     font-size: 3rem;
     font-weight: 500;
 }
+
+/* features you'll enjoy related styles */
+#features-title-border{
+    border-left: 5px solid rgb(255, 144, 14);
+    padding-left: 25px;
+}
+
+.feature-you-enjoy{
+    gap: 140px;
+}
+
+.card-title{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0px;
+}
+
+.features-card{
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 25px; 
+}
+
 
 /* fact realated styles */
 .fact-container{
@@ -200,6 +225,8 @@ main{
 .sponsor-image{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    gap: 50px;
+    justify-items: center;
     align-items: center;
 }
 
@@ -208,7 +235,18 @@ main{
 }
 
 /* footer related styles */
+footer{
+    max-width: 1440px;
+    margin: 150px auto;
+    text-align: center;
+    padding: 25px;
+    border-radius: 8px;
+}
 
+.footer-text{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
 /* media queries realted styles */
 @media screen and (max-width: 576px) {
     .navbar, 
@@ -237,6 +275,11 @@ main{
         justify-items: center;
         gap: 50px
     }
+
+    footer{
+        margin: 50px auto;
+        margin-bottom: 0px;
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 932px){
@@ -249,5 +292,10 @@ main{
         grid-template-columns: repeat(2, 1fr);
         gap: 25px;
         justify-items: center;
+    }
+
+    footer{
+        margin: 50px auto;
+        margin-bottom: 0px;
     }
 }
